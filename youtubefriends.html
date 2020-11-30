@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background-color: #262626;}
+            
+            h1 {font-size: 64px;}
+            
+            h2 {font-size: 30px}
+            
+            p {font-size: 24px;}
+            
+            a:any-link {color: white; background-color: transparent; text-decoration: none}
+            
+            .YouTuberFriends {display: none}
+        </style>
+            <title>BobbyTDHC YouTube Channel Website</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+    
+      <div class="w3-bar w3-deep-purple w3-animate-opacity">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="videos.html" class="w3-bar-item w3-button">Videos</a>
+        <div class="w3-dropdown-hover w3-small">
+         <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="aboutme.html" class="w3-bar-item w3-button w3-deep-purple">About Me</a>
+                <a href="youtubefriends.html" class="w3-bar-item w3-button w3-deep-purple">YouTube Friends</a>
+            </div>
+        </div>
+    </div>
+    
+<!--Header-->
+<header class="w3-display-container w3-content w3-wide w3-mobile" style="max-width: 3000px" id="home">
+    <img class="w3-image w3-animate-opacity" src="webimages/channelbanner.png" width="2000" height="1500">
+</header>
+
+<br>
+
+    <!--YouTube Friends-->
+        <div class="w3-container w3-content w3-center w3-deep-purple w3-padding-24 w3-animate-opacity w3-mobile" style="max-width:1500px">
+            <h1 class="w3-center w3-text-white"><b>YOUTUBE FRIENDS</b></h1>
+        </div>
+<br>
+<br>
+<br>
+    
+    <!--YouTube Friends Slideshow-->
+        <div class="w3-content w3-display-container w3-black" style="max-width: 500px">
+            <a href="https://www.youtube.com/channel/UCsFescrNbjjQSnnEL27mnZQ"><img class="mySlides1" src="webimages/aizad64.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UC4oSA0bAfdxu1CjB7FFrJxA"><img class="mySlides1" src="webimages/wakojako.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCdTdZAZ0CQpZkuBYYv7wIkw"><img class="mySlides1" src="webimages/arifmcpe.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UC0t8TdDxOqEdjSE0Wyjz0DQ"><img class="mySlides1" src="webimages/sharolnizam.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UC25EcrtC908ulSdXM0ELwaw"><img class="mySlides1" src="webimages/dausomr.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCX51TMH0XGmKgwVshGflIrQ"><img class="mySlides1" src="webimages/afiqjerr.jpg" sstyle="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCLmT11fzI88tLhvezNMdEeA"><img class="mySlides1" src="webimages/vrepicist.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCS08zknr0unr8qYdTDkYrdw"><img class="mySlides1" src="webimages/averroes313.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCdwOKj6AgVpCJYx0UvS1wbg"><img class="mySlides1" src="webimages/mierullordmcpe.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCmrHW60ZdTn6uERMPTpzQew"><img class="mySlides1" src="webimages/zrxgamerz.jpg" style="width: 100%"></a>
+            <a href="https://www.youtube.com/channel/UCKSUUl9HS67LSjvSscPio2A"><img class="mySlides1" src="webimages/dusty.jpg" style="width: 100%"></a>
+            
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    
+                <!--Slideshow Script-->
+                <script>
+                var slideIndex = 1; showDivs(slideIndex);
+
+                function plusDivs(n) {showDivs(slideIndex += n);}
+
+                function showDivs(n) {var i; var x = document.getElementsByClassName("mySlides1"); if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length} ;
+    
+                for (i = 0; i < x.length; i++) {x[i].style.display = "none";} x[slideIndex-1].style.display = "block";}
+                    
+                </script>
+
+<br>
+<br>
+<br>
+    
+    <!--Footer-->
+        <footer class="w3-container w3-padding-64 w3-center w3-deep-purple w3-xlarge w3-mobile">
+            <p class="w3-large w3-center">Powered by 
+                <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">Bootstrap 4</a>
+            </p>
+    </footer>
+
+</body>
+</html>
